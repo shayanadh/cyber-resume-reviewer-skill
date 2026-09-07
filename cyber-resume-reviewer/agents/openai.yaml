@@ -1,0 +1,4 @@
+interface:
+  display_name: "IT & Cybersecurity Resume Reviewer"
+  short_description: "Evidence-led IT and cybersecurity resume improvements"
+  default_prompt: "Use $cyber-resume-reviewer to review and improve my resume for the IT or cybersecurity role I specify."

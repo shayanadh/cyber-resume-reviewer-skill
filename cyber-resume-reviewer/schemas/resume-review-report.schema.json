@@ -1,0 +1,593 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IT and Cybersecurity Resume Review v4",
+  "description": "Candidate-facing review. Analyzer JSON is a separate contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_version",
+    "target",
+    "assessment",
+    "findings",
+    "edits",
+    "requirements",
+    "questions",
+    "scorecard"
+  ],
+  "properties": {
+    "report_version": {
+      "const": "4.0.0"
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "role_family",
+        "source",
+        "assumptions"
+      ],
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role_family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source": {
+          "enum": [
+            "jd",
+            "user_title",
+            "inferred",
+            "general"
+          ]
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "submission_status",
+        "content_confidence",
+        "target_confidence",
+        "format_confidence",
+        "limitations",
+        "strengths"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "submission_status": {
+          "enum": [
+            "Ready for candidate review",
+            "Targeted edits needed",
+            "More evidence needed",
+            "Submission blocked",
+            "Not assessed"
+          ]
+        },
+        "content_confidence": {
+          "enum": [
+            "High",
+            "Medium",
+            "Low",
+            "Not assessed"
+          ]
+        },
+        "target_confidence": {
+          "enum": [
+            "High",
+            "Medium",
+            "Low",
+            "Not assessed"
+          ]
+        },
+        "format_confidence": {
+          "enum": [
+            "High",
+            "Medium",
+            "Low",
+            "Not assessed"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "priority",
+          "lens",
+          "classification",
+          "observation",
+          "evidence",
+          "recommendation"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "enum": [
+              "Critical",
+              "High",
+              "Medium",
+              "Optional"
+            ]
+          },
+          "lens": {
+            "enum": [
+              "Machine-read",
+              "Human-skim",
+              "Human-believe",
+              "Human-act"
+            ]
+          },
+          "classification": {
+            "enum": [
+              "Confirmed blocker",
+              "Requirement gap",
+              "Material risk",
+              "Unknown",
+              "Polish"
+            ]
+          },
+          "observation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "location",
+                "quote"
+              ],
+              "properties": {
+                "source": {
+                  "enum": [
+                    "resume",
+                    "user",
+                    "jd",
+                    "external"
+                  ]
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "recommendation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "edits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "action",
+          "location",
+          "original_text",
+          "replacement_text",
+          "source_refs",
+          "status",
+          "why",
+          "verification_question_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "enum": [
+              "replace",
+              "add",
+              "delete",
+              "move",
+              "retain"
+            ]
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "replacement_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "location",
+                "quote"
+              ],
+              "properties": {
+                "source": {
+                  "enum": [
+                    "resume",
+                    "user",
+                    "jd",
+                    "external"
+                  ]
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "status": {
+            "enum": [
+              "supported",
+              "needs_verification"
+            ]
+          },
+          "why": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification_question_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement",
+          "importance",
+          "timing",
+          "evidence_status",
+          "evidence",
+          "action"
+        ],
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "importance": {
+            "enum": [
+              "Mandatory",
+              "Core responsibility",
+              "Preferred",
+              "Inferred",
+              "Unclear"
+            ]
+          },
+          "timing": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_status": {
+            "enum": [
+              "Demonstrated",
+              "Claimed only",
+              "Adjacent",
+              "Not shown",
+              "Confirmed unmet",
+              "Unknown"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "location",
+                "quote"
+              ],
+              "properties": {
+                "source": {
+                  "enum": [
+                    "resume",
+                    "user",
+                    "jd",
+                    "external"
+                  ]
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "question",
+          "essential"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "essential": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "scorecard": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "profile",
+            "rows",
+            "assessed_weight",
+            "overall_score",
+            "provisional"
+          ],
+          "properties": {
+            "profile": {
+              "enum": [
+                "general",
+                "early_career",
+                "senior_ic",
+                "leadership",
+                "advisory",
+                "custom"
+              ]
+            },
+            "rows": {
+              "type": "array",
+              "minItems": 9,
+              "maxItems": 9,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "category",
+                  "weight",
+                  "rating",
+                  "points",
+                  "rationale"
+                ],
+                "properties": {
+                  "category": {
+                    "enum": [
+                      "document",
+                      "clarity",
+                      "positioning",
+                      "fit",
+                      "outcomes",
+                      "depth",
+                      "scope",
+                      "requirements",
+                      "development"
+                    ]
+                  },
+                  "weight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "rating": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "points": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "rationale": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "assessed_weight": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "overall_score": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            },
+            "provisional": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    },
+    "rewritten_resume": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "status",
+        "placeholders"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "clean",
+            "incomplete"
+          ]
+        },
+        "placeholders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "token",
+              "location",
+              "question_id"
+            ],
+            "properties": {
+              "token": {
+                "type": "string",
+                "pattern": "^\\[VERIFY: [^\\]\\n]+\\]$"
+              },
+              "location": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url",
+          "checked_date",
+          "supports"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "checked_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "supports": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

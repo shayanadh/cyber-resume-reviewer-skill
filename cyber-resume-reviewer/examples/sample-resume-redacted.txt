@@ -1,0 +1,26 @@
+Jordan Candidate
+[Contact information omitted for this review copy]
+
+SUMMARY
+Security professional with experience in cloud security and vulnerability management.
+
+SKILLS
+AWS, Azure, Terraform, Python, SIEM, IAM, EDR, Windows, Linux, HIPAA
+
+EXPERIENCE
+Security Engineer | Example Health Systems | 2021-Present
+- Created a Python script to combine weekly vulnerability exports for 2,400 endpoints; preparation time fell from 4 hours to 45 minutes per weekly run.
+- Worked with AWS and Azure security tools.
+- Created vulnerability dashboards and reports for leadership.
+- Helped with incident response.
+- Partnered with infrastructure engineers to retire 120 unsupported servers.
+
+Security Analyst | Example Services | 2018-2021
+- Monitored SIEM alerts and escalated incidents.
+- Ran vulnerability scans.
+
+EDUCATION
+B.S. Information Technology, Example University
+
+CERTIFICATIONS
+CompTIA Security+ (earned 2019; current status not provided in this review copy)

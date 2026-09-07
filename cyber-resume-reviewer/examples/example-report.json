@@ -1,0 +1,155 @@
+{
+  "report_version": "4.0.0",
+  "target": {
+    "title": "Senior Cloud Security Engineer",
+    "role_family": "Cloud security",
+    "source": "jd",
+    "assumptions": []
+  },
+  "assessment": {
+    "summary": "The resume shows useful automation and remediation work, but does not yet demonstrate the design depth requested for this senior cloud role.",
+    "submission_status": "More evidence needed",
+    "content_confidence": "High",
+    "target_confidence": "Medium",
+    "format_confidence": "Not assessed",
+    "limitations": [
+      "Text-only review; no original-file parsing or visual layout assessment.",
+      "Contact is intentionally redacted.",
+      "Credential current status is unspecified."
+    ],
+    "strengths": [
+      "Python automation has a defined population and before/after preparation time.",
+      "Server retirement is a concrete infrastructure contribution."
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "High",
+      "lens": "Human-believe",
+      "classification": "Material risk",
+      "observation": "AWS and Azure tool use is too broad to demonstrate cloud control design.",
+      "evidence": [
+        {
+          "source": "resume",
+          "location": "Example Health Systems, bullet 2",
+          "quote": "Worked with AWS and Azure security tools."
+        }
+      ],
+      "recommendation": "Ask which controls and personal actions can be described before adding a guardrail or architecture claim."
+    }
+  ],
+  "edits": [
+    {
+      "id": "E1",
+      "action": "replace",
+      "location": "Example Health Systems, bullet 1",
+      "original_text": "Created a Python script to combine weekly vulnerability exports for 2,400 endpoints; preparation time fell from 4 hours to 45 minutes per weekly run.",
+      "replacement_text": "Automated weekly vulnerability-export aggregation for 2,400 endpoints with Python, reducing preparation from 4 hours to 45 minutes per run.",
+      "source_refs": [
+        {
+          "source": "resume",
+          "location": "Example Health Systems, bullet 1",
+          "quote": "Created a Python script to combine weekly vulnerability exports for 2,400 endpoints; preparation time fell from 4 hours to 45 minutes per weekly run."
+        }
+      ],
+      "status": "supported",
+      "why": "Preserves the stated method, scope, and measured result in a clearer sentence.",
+      "verification_question_ids": []
+    }
+  ],
+  "requirements": [
+    {
+      "requirement": "Hands-on AWS or Azure security experience.",
+      "importance": "Mandatory",
+      "timing": null,
+      "evidence_status": "Claimed only",
+      "evidence": [
+        {
+          "source": "resume",
+          "location": "Example Health Systems, bullet 2",
+          "quote": "Worked with AWS and Azure security tools."
+        }
+      ],
+      "action": "Clarify the cloud service/control and what the candidate personally did; the requirement allows either cloud."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "Which AWS or Azure controls did you implement, administer, investigate, or improve, and what was your role?",
+      "essential": false
+    }
+  ],
+  "scorecard": {
+    "profile": "senior_ic",
+    "rows": [
+      {
+        "category": "document",
+        "weight": 10,
+        "rating": null,
+        "points": null,
+        "rationale": "Only text was supplied; original-file parsing is not assessed."
+      },
+      {
+        "category": "clarity",
+        "weight": 10,
+        "rating": 4,
+        "points": 8.0,
+        "rationale": "Clear headings and chronology; cloud-relevant evidence could be ordered more strongly."
+      },
+      {
+        "category": "positioning",
+        "weight": 10,
+        "rating": 2,
+        "points": 4.0,
+        "rationale": "The opening identifies cloud and vulnerability work but not the senior cloud mandate."
+      },
+      {
+        "category": "fit",
+        "weight": 20,
+        "rating": 2,
+        "points": 8.0,
+        "rationale": "Cloud tool use is stated, but guardrail design and architecture examples are not shown."
+      },
+      {
+        "category": "outcomes",
+        "weight": 15,
+        "rating": 4,
+        "points": 12.0,
+        "rationale": "Python export automation has a clear before/after; server retirement has a defined scope."
+      },
+      {
+        "category": "depth",
+        "weight": 20,
+        "rating": 3,
+        "points": 12.0,
+        "rationale": "Python and endpoint scope are specific; AWS/Azure controls remain unnamed."
+      },
+      {
+        "category": "scope",
+        "weight": 10,
+        "rating": 2,
+        "points": 4.0,
+        "rationale": "Partnering and automation are shown; senior design ownership is not established."
+      },
+      {
+        "category": "requirements",
+        "weight": 3,
+        "rating": 2,
+        "points": 1.2,
+        "rationale": "Required cloud experience is broadly claimed; identity/logging evidence remains unclear."
+      },
+      {
+        "category": "development",
+        "weight": 2,
+        "rating": null,
+        "points": null,
+        "rationale": "No demonstrated learning gap warrants a development rating in this review."
+      }
+    ],
+    "assessed_weight": 88,
+    "overall_score": 55.9,
+    "provisional": true
+  }
+}

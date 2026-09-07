@@ -1,0 +1,20 @@
+Senior Cloud Security Engineer - Healthcare Technology
+Illustrative job description for skill examples; not a live opening.
+
+Responsibilities:
+- Build and maintain cloud security guardrails using infrastructure as code.
+- Improve IAM, least privilege, logging, and detection coverage.
+- Review cloud architecture and partner with engineering teams on secure design.
+- Use cloud security posture findings and business context to prioritize remediation.
+- Develop useful risk metrics for leadership and support cloud incident response.
+
+Required:
+- 5+ years in cybersecurity or cloud engineering.
+- Hands-on AWS or Azure security experience.
+- Experience with identity, logging, detection, and remediation workflows.
+- Ability to communicate clearly with engineering partners.
+
+Preferred:
+- Healthcare or other regulated-industry experience.
+- Terraform or another infrastructure-as-code tool.
+- A relevant current cloud security certification or comparable practical evidence.

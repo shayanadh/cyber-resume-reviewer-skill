@@ -1,0 +1,375 @@
+{
+  "version": "4.0.0",
+  "note": "Bounded lexical aliases, not a qualification map. Resolve context manually.",
+  "terms": {
+    "AWS": [
+      "AWS",
+      "Amazon Web Services"
+    ],
+    "Azure": [
+      "Azure",
+      "Microsoft Azure"
+    ],
+    "Google Cloud": [
+      "Google Cloud",
+      "Google Cloud Platform",
+      "GCP"
+    ],
+    "Microsoft Entra ID": [
+      "Microsoft Entra ID",
+      "Entra ID",
+      "Azure Active Directory",
+      "Azure AD"
+    ],
+    "Active Directory": [
+      "Active Directory"
+    ],
+    "Microsoft Sentinel": [
+      "Microsoft Sentinel",
+      "Azure Sentinel"
+    ],
+    "Microsoft Defender for Endpoint": [
+      "Microsoft Defender for Endpoint",
+      "Defender for Endpoint"
+    ],
+    "Microsoft Defender for Cloud": [
+      "Microsoft Defender for Cloud",
+      "Defender for Cloud"
+    ],
+    "SIEM": [
+      "SIEM",
+      "security information and event management"
+    ],
+    "EDR": [
+      "EDR",
+      "endpoint detection and response"
+    ],
+    "IAM": [
+      "IAM",
+      "identity and access management"
+    ],
+    "IGA": [
+      "IGA",
+      "identity governance and administration"
+    ],
+    "PAM": [
+      "PAM",
+      "privileged access management"
+    ],
+    "MFA": [
+      "MFA",
+      "multifactor authentication",
+      "multi-factor authentication"
+    ],
+    "SSO": [
+      "SSO",
+      "single sign-on",
+      "single sign on"
+    ],
+    "SAML": [
+      "SAML",
+      "security assertion markup language"
+    ],
+    "OIDC": [
+      "OIDC",
+      "OpenID Connect"
+    ],
+    "OAuth": [
+      "OAuth",
+      "OAuth 2.0"
+    ],
+    "CSPM": [
+      "CSPM",
+      "cloud security posture management"
+    ],
+    "CWPP": [
+      "CWPP",
+      "cloud workload protection platform"
+    ],
+    "SAST": [
+      "SAST",
+      "static application security testing"
+    ],
+    "DAST": [
+      "DAST",
+      "dynamic application security testing"
+    ],
+    "SCA": [
+      "SCA",
+      "software composition analysis"
+    ],
+    "SBOM": [
+      "SBOM",
+      "software bill of materials"
+    ],
+    "IaC": [
+      "IaC",
+      "infrastructure as code",
+      "infrastructure-as-code"
+    ],
+    "CI/CD": [
+      "CI/CD",
+      "continuous integration and continuous delivery",
+      "continuous integration/continuous delivery"
+    ],
+    "MITRE ATT&CK": [
+      "MITRE ATT&CK",
+      "ATT&CK"
+    ],
+    "NIST CSF": [
+      "NIST CSF",
+      "NIST Cybersecurity Framework"
+    ],
+    "NIST SP 800-53": [
+      "NIST SP 800-53",
+      "NIST 800-53"
+    ],
+    "ISO 27001": [
+      "ISO 27001",
+      "ISO/IEC 27001"
+    ],
+    "SOC 2": [
+      "SOC 2",
+      "SOC2"
+    ],
+    "CISA KEV": [
+      "CISA KEV",
+      "known exploited vulnerabilities"
+    ],
+    "EPSS": [
+      "EPSS",
+      "Exploit Prediction Scoring System"
+    ],
+    "CVSS": [
+      "CVSS",
+      "Common Vulnerability Scoring System"
+    ],
+    "Vulnerability management": [
+      "vulnerability management"
+    ],
+    "Incident response": [
+      "incident response"
+    ],
+    "Detection engineering": [
+      "detection engineering"
+    ],
+    "Security operations center": [
+      "security operations center",
+      "security operations centre"
+    ],
+    "Threat intelligence": [
+      "threat intelligence",
+      "cyber threat intelligence"
+    ],
+    "Penetration testing": [
+      "penetration testing",
+      "penetration tests",
+      "pentesting"
+    ],
+    "Red team": [
+      "red team",
+      "red teaming"
+    ],
+    "Threat modeling": [
+      "threat modeling",
+      "threat modelling"
+    ],
+    "Least privilege": [
+      "least privilege",
+      "least-privilege"
+    ],
+    "Service desk": [
+      "service desk",
+      "help desk",
+      "helpdesk"
+    ],
+    "Systems administration": [
+      "systems administration",
+      "system administration"
+    ],
+    "Patch management": [
+      "patch management",
+      "patching"
+    ],
+    "Recovery testing": [
+      "recovery testing",
+      "restore testing",
+      "restoration testing"
+    ],
+    "GRC": [
+      "GRC",
+      "governance, risk, and compliance",
+      "governance risk and compliance"
+    ],
+    "Windows": [
+      "Windows"
+    ],
+    "Linux": [
+      "Linux"
+    ],
+    "DNS": [
+      "DNS",
+      "domain name system"
+    ],
+    "DHCP": [
+      "DHCP",
+      "dynamic host configuration protocol"
+    ],
+    "TCP/IP": [
+      "TCP/IP"
+    ],
+    "C++": [
+      "C++"
+    ],
+    "C#": [
+      "C#"
+    ],
+    ".NET": [
+      ".NET"
+    ],
+    "C": [
+      "C"
+    ],
+    "Terraform": [
+      "Terraform"
+    ],
+    "Bicep": [
+      "Bicep"
+    ],
+    "Ansible": [
+      "Ansible"
+    ],
+    "Kubernetes": [
+      "Kubernetes"
+    ],
+    "Docker": [
+      "Docker"
+    ],
+    "Python": [
+      "Python"
+    ],
+    "PowerShell": [
+      "PowerShell"
+    ],
+    "Bash": [
+      "Bash"
+    ],
+    "Splunk": [
+      "Splunk"
+    ],
+    "KQL": [
+      "KQL"
+    ],
+    "SPL": [
+      "SPL"
+    ],
+    "Sigma": [
+      "Sigma"
+    ],
+    "YARA": [
+      "YARA"
+    ],
+    "Sysmon": [
+      "Sysmon"
+    ],
+    "CrowdStrike": [
+      "CrowdStrike"
+    ],
+    "SentinelOne": [
+      "SentinelOne"
+    ],
+    "Tenable": [
+      "Tenable"
+    ],
+    "Nessus": [
+      "Nessus"
+    ],
+    "Qualys": [
+      "Qualys"
+    ],
+    "Rapid7": [
+      "Rapid7"
+    ],
+    "Wiz": [
+      "Wiz"
+    ],
+    "Nuclei": [
+      "Nuclei"
+    ],
+    "Burp Suite": [
+      "Burp Suite"
+    ],
+    "Metasploit": [
+      "Metasploit"
+    ],
+    "Cobalt Strike": [
+      "Cobalt Strike"
+    ],
+    "Okta": [
+      "Okta"
+    ],
+    "CyberArk": [
+      "CyberArk"
+    ],
+    "SailPoint": [
+      "SailPoint"
+    ],
+    "CloudTrail": [
+      "CloudTrail"
+    ],
+    "GuardDuty": [
+      "GuardDuty"
+    ],
+    "Security Hub": [
+      "Security Hub"
+    ],
+    "HIPAA": [
+      "HIPAA"
+    ],
+    "HITRUST": [
+      "HITRUST"
+    ],
+    "FedRAMP": [
+      "FedRAMP"
+    ],
+    "CMMC": [
+      "CMMC"
+    ],
+    "SOX": [
+      "SOX"
+    ],
+    "PCI DSS": [
+      "PCI DSS"
+    ],
+    "Intune": [
+      "Intune"
+    ],
+    "SCCM": [
+      "SCCM"
+    ],
+    "JAMF": [
+      "JAMF"
+    ],
+    "VMware": [
+      "VMware"
+    ],
+    "CISSP": [
+      "CISSP"
+    ],
+    "Security+": [
+      "Security+"
+    ],
+    "CCSP": [
+      "CCSP"
+    ],
+    "CISM": [
+      "CISM"
+    ],
+    "CISA": [
+      "CISA"
+    ],
+    "Exposure management": [
+      "exposure management"
+    ]
+  }
+}
